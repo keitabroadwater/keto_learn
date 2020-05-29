@@ -1,5 +1,5 @@
 # keto_learn
-A ground up library of data science, machine learning, graph analytics, deep learning, etc......
+A ground-up library of data science, machine learning, graph analytics, deep learning, etc......
 
 
 Inspired by:
