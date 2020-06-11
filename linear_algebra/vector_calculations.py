@@ -4,12 +4,9 @@ Basic Vector Calculations:
 The basis for these calculation is the python list. So, this is only for insight and education, not performance.
 """
 
-
 from typing import List
 from math import sqrt
 from numpy import inf
-
-
 
 Vector = List[float]
 

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4ae9987-3afb-45f7-baf0-54db341b854c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/linear_algebra/matrix_calculations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linear_algebra/matrix_decompositions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/generalized_linear_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_matrix_calculations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linear_algebra/vector_calculations.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_algebra/vector_calculations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_vector_calculations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_vector_calculations.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linear_algebra/vector_calculations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="130" column="32" lean-forward="true" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
+            <state relative-caret-position="120">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
               <folding>
                 <element signature="e#151#174#0" expanded="true" />
               </folding>
@@ -29,13 +32,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_vector_calculations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
+            <state relative-caret-position="1710">
+              <caret line="114" column="14" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linear_algebra/matrix_decompositions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/generalized_linear_models.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linear_algebra/matrix_calculations.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_matrix_calculations.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -60,6 +91,9 @@
         <option value="$PROJECT_DIR$/tests/test_subtract.py" />
         <option value="$PROJECT_DIR$/tests/test_vector_calculations.py" />
         <option value="$PROJECT_DIR$/linear_algebra/vector_calculations.py" />
+        <option value="$PROJECT_DIR$/linear_algebra/matrix_calculations.py" />
+        <option value="$PROJECT_DIR$/linear_algebra/matrix_decompositions.py" />
+        <option value="$PROJECT_DIR$/models/generalized_linear_models.py" />
       </list>
     </option>
   </component>
@@ -84,7 +118,7 @@
             <path>
               <item name="keto_learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="keto_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="linear_algebra" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="keto_learn" type="b2602c69:ProjectViewProjectNode" />
@@ -223,13 +257,17 @@
       <option name="project" value="LOCAL" />
       <updated>1591854206704</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added more vector calc functions.">
+      <created>1591889037196</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591889037196</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorDivision - 2020.06.11 at 07h 37m 18s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorDivision" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 07h 46m 07s.xml">
       <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
     </history-entry>
@@ -257,6 +295,9 @@
     <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 22m 30s.xml">
       <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 23m 32s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -269,19 +310,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49803922" visible="true" weight="0.24242425" />
-      <window_info id="Structure" order="1" sideWeight="0.5019608" side_tool="true" visible="true" weight="0.24242425" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49914238" visible="true" weight="0.24242425" />
+      <window_info id="Structure" order="1" sideWeight="0.50085765" side_tool="true" visible="true" weight="0.24242425" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32894737" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23289473" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.23289473" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3276316" />
@@ -333,7 +373,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactored test directory to create one test function for each module directory. Added vector calculation." />
     <MESSAGE value="Added more vector calc functions. Fully using TDD now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more vector calc functions. Fully using TDD now." />
+    <MESSAGE value="Added more vector calc functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more vector calc functions." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests/tests_vector_calcs.py" />
@@ -368,25 +409,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_matrix_calculations.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linear_algebra/vector_calculations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#151#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linear_algebra/matrix_calculations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_vector_calculations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
+        <state relative-caret-position="1710">
+          <caret line="114" column="14" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linear_algebra/vector_calculations.py">
+    <entry file="file://$PROJECT_DIR$/linear_algebra/matrix_decompositions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="130" column="32" lean-forward="true" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
-          <folding>
-            <element signature="e#151#174#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/generalized_linear_models.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
