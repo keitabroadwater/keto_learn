@@ -6,6 +6,7 @@ The basis for these calculation is the python list. So, this is only for insight
 
 
 from typing import List
+from math import sqrt
 
 
 Vector = List[float]
@@ -26,7 +27,7 @@ def subtract(v: Vector, w: Vector) -> Vector:
 
     assert len(v) == len(w), "vectors must be the same length"
 
-    return [v_i - w_i for v_i, w_i in zip(v,w)]
+    return [v_i - w_i for v_i, w_i in zip(v, w)]
 
 
 def vector_sum(vectors: List[Vector]) -> Vector:
@@ -61,6 +62,7 @@ def vector_mean(vectors: List[Vector]) -> Vector:
     # Ensure lists are same length
 
     length_vector = len(vectors[0])
+    number_of_vectors = len(vectors)
     assert all([len(vectors[i]) == length_vector for i in range(len(vectors))]), "vectors are not the same size"
 
     # For every index, get the element of each vector
@@ -69,10 +71,9 @@ def vector_mean(vectors: List[Vector]) -> Vector:
     for idx in range(length_vector):
         temp_mean = []
         for vect in vectors:
-
             temp_mean.append(vect[idx])
 
-        temp_mean = sum(temp_mean)/length_vector
+        temp_mean = sum(temp_mean)/number_of_vectors*1.0
         averages.append(temp_mean)
 
     return averages
@@ -82,22 +83,30 @@ def dot(v: Vector, w: Vector) -> float:
 
     """computes v_1 * w_1 + v_2 * w_2 + ... v_n * w_n"""
 
+    return sum([v_i * w_i for v_i, w_i in zip(v, w)])
 
 
 def sum_of_squares(v: Vector) -> float:
 
     """Returns v_1 * v_1  +  v_2 * v_2  +  ....  v_n * v_n"""
 
+    return dot(v,v)
+
+
 def magnitude(v: Vector) -> float:
 
-    """Returns the magnitude (or length) of v"""
+    """Returns the magnitude (or length) of v; which is the square root of the sum of squares"""
+
+    return sqrt(sum_of_squares(v))
 
 
 def squared_distance(v: Vector, w: Vector) -> float:
 
     """Computes (v_1 - w_1) ** 2 + ... + (v_n -w_n) ** 2"""
+    pass
 
 def euclidean_distance(v: Vector, w: Vector) -> float:
 
     """Computes the euclidean distance between v and w"""
+    pass
 
