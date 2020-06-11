@@ -63,8 +63,19 @@ def vector_mean(vectors: List[Vector]) -> Vector:
     length_vector = len(vectors[0])
     assert all([len(vectors[i]) == length_vector for i in range(len(vectors))]), "vectors are not the same size"
 
-    #
-    return sum[]
+    # For every index, get the element of each vector
+
+    averages = []
+    for idx in range(length_vector):
+        temp_mean = []
+        for vect in vectors:
+
+            temp_mean.append(vect[idx])
+
+        temp_mean = sum(temp_mean)/length_vector
+        averages.append(temp_mean)
+
+    return averages
 
 
 def dot(v: Vector, w: Vector) -> float:
@@ -75,7 +86,7 @@ def dot(v: Vector, w: Vector) -> float:
 
 def sum_of_squares(v: Vector) -> float:
 
-    """Returns v_1 * v_1 + v_2 * v_2 + .... v_n * v_n"""
+    """Returns v_1 * v_1  +  v_2 * v_2  +  ....  v_n * v_n"""
 
 def magnitude(v: Vector) -> float:
 
