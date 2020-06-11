@@ -58,6 +58,12 @@ def vector_mean(vectors: List[Vector]) -> Vector:
 
     """Computes the element-wise average"""
 
+    # Ensure lists are same length
+
+    length_vector = len(vectors[0])
+    assert all([len(vectors[i]) == length_vector for i in range(len(vectors))]), "vectors are not the same size"
+
+    #
     return sum[]
 
 
