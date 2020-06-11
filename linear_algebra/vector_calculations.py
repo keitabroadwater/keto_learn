@@ -7,6 +7,8 @@ The basis for these calculation is the python list. So, this is only for insight
 
 from typing import List
 from math import sqrt
+from numpy import inf
+
 
 
 Vector = List[float]
@@ -103,10 +105,41 @@ def magnitude(v: Vector) -> float:
 def squared_distance(v: Vector, w: Vector) -> float:
 
     """Computes (v_1 - w_1) ** 2 + ... + (v_n -w_n) ** 2"""
-    pass
 
-def euclidean_distance(v: Vector, w: Vector) -> float:
+    return sum_of_squares(subtract(v, w))
 
-    """Computes the euclidean distance between v and w"""
-    pass
 
+def vector_multiply(v: Vector, w: Vector) -> Vector:
+
+    """Element-wise multiplication of vectors"""
+
+    return [v_i * w_i for v_i, w_i in zip(v, w)]
+
+def vector_division(v: Vector, w: Vector) -> Vector:
+
+    """Element-wise division of vectors"""
+
+    # check for zero divisors
+
+    assert (0 in w) == False, "zero in divisor vector!"
+
+    return [v_i / w_i for v_i, w_i in zip(v, w)]
+
+def norm(v: Vector, norm_type: float) -> float:
+
+    """Computes the norm of a vector, given a the desired type:
+        L1 or manhattan Norm = 1
+        L2 or euclidean Norm = 2
+        Linf or max Norm = inf"""
+
+    if norm_type == 1:
+
+        return sum([abs(x) for x in v])
+
+    if norm_type == 2:
+
+        return sqrt(sum([x**2 for x in v]))
+
+    if norm_type == inf:
+
+        return max([abs(x) for x in v])

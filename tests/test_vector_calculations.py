@@ -1,6 +1,8 @@
 from unittest import TestCase
 
-from linear_algebra.vector_calculations import add, subtract, vector_sum, scalar_multiply, vector_mean, dot, sum_of_squares, magnitude
+from linear_algebra.vector_calculations import *
+from numpy import inf
+
 
 v = [5, 6, 7]
 w = [1, 0, 1]
@@ -9,6 +11,7 @@ s = [2, 3, 4]
 t = [1, 0, 1]
 
 u = [3, 4]
+vv = [1, 3, 1]
 
 c = 5
 
@@ -71,3 +74,45 @@ class TestMagnitude(TestCase):
         x = magnitude(u)
 
         assert x == 5
+
+class TestSquaredDistance(TestCase):
+    def test_squared_distance(self):
+
+        x = squared_distance(s, t)
+
+        assert x == 19
+
+class TestVectorMultiply(TestCase):
+    def test_vector_multiply(self):
+
+        x = vector_multiply(v, w)
+
+        assert x == [5, 0, 7]
+
+
+class TestVectorDivision(TestCase):
+    def test_vector_division(self):
+
+        x = vector_division(v, vv)
+
+        assert x == [5, 2, 7]
+
+class TestVectorNorms(TestCase):
+    def test_manhattan_norm(self):
+
+        x = norm(v, 1)
+
+        assert x == 18
+
+    def test_euclidean_norm(self):
+
+        x = norm(u, 2)
+
+        assert x == 5
+
+    def test_max_norm(self):
+
+        x = norm(u, inf)
+
+        assert x == 4
+

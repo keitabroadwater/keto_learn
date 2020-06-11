@@ -4,8 +4,7 @@
     <list default="true" id="d4ae9987-3afb-45f7-baf0-54db341b854c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linear_algebra/vector_calculations.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_algebra/vector_calculations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_vector_calculations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_subtract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_vector_calculations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_vector_calculations.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,47 +14,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="15">
-                <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linear_algebra/vector_calculations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/test_vector_calculations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="223">
+              <caret line="130" column="32" lean-forward="true" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#151#174#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/tests/test_vector_calculations.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -77,9 +57,9 @@
         <option value="$PROJECT_DIR$/linear_algebra/test_add.py" />
         <option value="$PROJECT_DIR$/tests/test_add.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/linear_algebra/vector_calculations.py" />
         <option value="$PROJECT_DIR$/tests/test_subtract.py" />
         <option value="$PROJECT_DIR$/tests/test_vector_calculations.py" />
+        <option value="$PROJECT_DIR$/linear_algebra/vector_calculations.py" />
       </list>
     </option>
   </component>
@@ -108,11 +88,6 @@
             </path>
             <path>
               <item name="keto_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keto_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keto_learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -137,29 +112,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_subtract.TestSubtract.test_subtract">
-    <configuration name="vector_calculations" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="keto_learn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/linear_algebra" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linear_algebra/vector_calculations.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_subtract.TestSubtract.test_subtract" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test_vector_calculations.TestVectorNorms">
+    <configuration name="pytest for test_vector_calculations.TestMagnitude" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="keto_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,11 +124,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_subtract.TestSubtract.test_subtract&quot;" />
+      <option name="_new_target" value="&quot;test_vector_calculations.TestMagnitude&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.test_vector_calculations.TestAdd.test_add" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_vector_calculations.TestSquaredDistance" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="keto_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -185,15 +139,62 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_vector_calculations.TestAdd.test_add&quot;" />
+      <option name="_new_target" value="&quot;test_vector_calculations.TestSquaredDistance&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_vector_calculations.TestVectorDivision" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="keto_learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_vector_calculations.TestVectorDivision&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_vector_calculations.TestVectorMultiply" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="keto_learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_vector_calculations.TestVectorMultiply&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_vector_calculations.TestVectorNorms" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="keto_learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_vector_calculations.TestVectorNorms&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_subtract.TestSubtract.test_subtract" />
-        <item itemvalue="Python tests.pytest for tests.test_vector_calculations.TestAdd.test_add" />
-        <item itemvalue="Python.vector_calculations" />
+        <item itemvalue="Python tests.pytest for test_vector_calculations.TestVectorNorms" />
+        <item itemvalue="Python tests.pytest for test_vector_calculations.TestVectorDivision" />
+        <item itemvalue="Python tests.pytest for test_vector_calculations.TestVectorMultiply" />
+        <item itemvalue="Python tests.pytest for test_vector_calculations.TestSquaredDistance" />
+        <item itemvalue="Python tests.pytest for test_vector_calculations.TestMagnitude" />
       </list>
     </recent_temporary>
   </component>
@@ -208,23 +209,53 @@
       <option name="presentableId" value="Default" />
       <updated>1590710034748</updated>
     </task>
+    <task id="LOCAL-00001" summary="Refactored test directory to create one test function for each module directory. Added vector calculation.">
+      <created>1591850325688</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591850325688</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added more vector calc functions. Fully using TDD now.">
+      <created>1591854206704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591854206704</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_add_TestAdd_test_add - 2020.05.28 at 20h 48m 07s.xml">
-      <configuration name="pytest for test_add.TestAdd.test_add" configurationId="tests" />
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorDivision - 2020.06.11 at 07h 37m 18s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorDivision" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_add_TestAdd_test_add - 2020.05.28 at 20h 51m 49s.xml">
-      <configuration name="pytest for test_add.TestAdd.test_add" configurationId="tests" />
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 07h 46m 07s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_add_TestAdd_test_add - 2020.05.28 at 21h 01m 24s.xml">
-      <configuration name="pytest for test_add.TestAdd.test_add" configurationId="tests" />
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 09m 46s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_add_TestAdd_test_add - 2020.05.28 at 21h 06m 09s.xml">
-      <configuration name="pytest for test_add.TestAdd.test_add" configurationId="tests" />
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 10m 42s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_subtract_TestSubtract_test_subtract - 2020.05.28 at 21h 14m 13s.xml">
-      <configuration name="pytest for test_subtract.TestSubtract.test_subtract" configurationId="tests" />
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 13m 07s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 15m 33s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 16m 18s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 16m 33s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 18m 05s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 22m 30s.xml">
+      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -238,21 +269,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24242425" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49803922" visible="true" weight="0.24242425" />
+      <window_info id="Structure" order="1" sideWeight="0.5019608" side_tool="true" visible="true" weight="0.24242425" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32970297" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.23289473" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23289473" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32871288" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3276316" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -298,6 +330,11 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactored test directory to create one test function for each module directory. Added vector calculation." />
+    <MESSAGE value="Added more vector calc functions. Fully using TDD now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more vector calc functions. Fully using TDD now." />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests/tests_vector_calcs.py" />
     <entry file="file://$PROJECT_DIR$/linear_algebra/test_add.py" />
@@ -324,13 +361,6 @@
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/linear_algebra/vector_calculations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_subtract.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -340,10 +370,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_vector_calculations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="88">
+          <caret line="99" column="13" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linear_algebra/vector_calculations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="130" column="32" lean-forward="true" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
+          <folding>
+            <element signature="e#151#174#0" expanded="true" />
           </folding>
         </state>
       </provider>
