@@ -44,8 +44,9 @@ def vector_sum(vectors: List[Vector]) -> Vector:
 
     # the i-th element of the result is the sum of every vector[i]
 
-    return [sum(vector[i] for vector in vectors)   \
+    return [sum(vector[i] for vector in vectors)
             for i in range(number_of_elements)]
+
 
 def scalar_multiply(c: float, v:Vector) -> Vector:
 
@@ -112,6 +113,7 @@ def vector_multiply(v: Vector, w: Vector) -> Vector:
 
     return [v_i * w_i for v_i, w_i in zip(v, w)]
 
+
 def vector_division(v: Vector, w: Vector) -> Vector:
 
     """Element-wise division of vectors"""
@@ -121,6 +123,7 @@ def vector_division(v: Vector, w: Vector) -> Vector:
     assert (0 in w) == False, "zero in divisor vector!"
 
     return [v_i / w_i for v_i, w_i in zip(v, w)]
+
 
 def norm(v: Vector, norm_type: float) -> float:
 
@@ -140,3 +143,5 @@ def norm(v: Vector, norm_type: float) -> float:
     if norm_type == inf:
 
         return max([abs(x) for x in v])
+
+

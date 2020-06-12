@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4ae9987-3afb-45f7-baf0-54db341b854c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/linear_algebra/matrix_calculations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linear_algebra/matrix_decompositions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/generalized_linear_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_matrix_calculations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear_algebra/matrix_calculations.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_algebra/matrix_calculations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear_algebra/matrix_decompositions.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_algebra/matrix_factorization.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linear_algebra/vector_calculations.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_algebra/vector_calculations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_matrix_calculations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_matrix_calculations.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,56 +16,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linear_algebra/vector_calculations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <element signature="e#151#174#0" expanded="true" />
+                <element signature="e#150#173#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_vector_calculations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
-              <caret line="114" column="14" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linear_algebra/matrix_decompositions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/generalized_linear_models.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linear_algebra/matrix_calculations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="403">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_matrix_calculations.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -90,10 +70,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tests/test_subtract.py" />
         <option value="$PROJECT_DIR$/tests/test_vector_calculations.py" />
-        <option value="$PROJECT_DIR$/linear_algebra/vector_calculations.py" />
-        <option value="$PROJECT_DIR$/linear_algebra/matrix_calculations.py" />
         <option value="$PROJECT_DIR$/linear_algebra/matrix_decompositions.py" />
         <option value="$PROJECT_DIR$/models/generalized_linear_models.py" />
+        <option value="$PROJECT_DIR$/tests/test_matrix_calculations.py" />
+        <option value="$PROJECT_DIR$/linear_algebra/matrix_calculations.py" />
+        <option value="$PROJECT_DIR$/linear_algebra/vector_calculations.py" />
       </list>
     </option>
   </component>
@@ -107,13 +88,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="keto_learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="keto_learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keto_learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keto_learn" type="462c0819:PsiDirectoryNode" />
+              <item name="linear_algebra" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="keto_learn" type="b2602c69:ProjectViewProjectNode" />
@@ -128,6 +113,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,8 +132,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_vector_calculations.TestVectorNorms">
-    <configuration name="pytest for test_vector_calculations.TestMagnitude" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test_matrix_calculations.TestIdentityMatrix">
+    <configuration name="pytest for test_matrix_calculations.TestGetColumn" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="keto_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -158,11 +144,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_vector_calculations.TestMagnitude&quot;" />
+      <option name="_new_target" value="&quot;test_matrix_calculations.TestGetColumn&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_vector_calculations.TestSquaredDistance" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_matrix_calculations.TestGetRow" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="keto_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -173,11 +159,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_vector_calculations.TestSquaredDistance&quot;" />
+      <option name="_new_target" value="&quot;test_matrix_calculations.TestGetRow&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_vector_calculations.TestVectorDivision" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_matrix_calculations.TestIdentityMatrix" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="keto_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -188,11 +174,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_vector_calculations.TestVectorDivision&quot;" />
+      <option name="_new_target" value="&quot;test_matrix_calculations.TestIdentityMatrix&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_vector_calculations.TestVectorMultiply" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_matrix_calculations.TestMakeMatrix" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="keto_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -203,11 +189,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_vector_calculations.TestVectorMultiply&quot;" />
+      <option name="_new_target" value="&quot;test_matrix_calculations.TestMakeMatrix&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_vector_calculations.TestVectorNorms" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_matrix_calculations.TestShape" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="keto_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -218,17 +204,17 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_vector_calculations.TestVectorNorms&quot;" />
+      <option name="_new_target" value="&quot;test_matrix_calculations.TestShape&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_vector_calculations.TestVectorNorms" />
-        <item itemvalue="Python tests.pytest for test_vector_calculations.TestVectorDivision" />
-        <item itemvalue="Python tests.pytest for test_vector_calculations.TestVectorMultiply" />
-        <item itemvalue="Python tests.pytest for test_vector_calculations.TestSquaredDistance" />
-        <item itemvalue="Python tests.pytest for test_vector_calculations.TestMagnitude" />
+        <item itemvalue="Python tests.pytest for test_matrix_calculations.TestIdentityMatrix" />
+        <item itemvalue="Python tests.pytest for test_matrix_calculations.TestMakeMatrix" />
+        <item itemvalue="Python tests.pytest for test_matrix_calculations.TestGetColumn" />
+        <item itemvalue="Python tests.pytest for test_matrix_calculations.TestGetRow" />
+        <item itemvalue="Python tests.pytest for test_matrix_calculations.TestShape" />
       </list>
     </recent_temporary>
   </component>
@@ -264,39 +250,46 @@
       <option name="project" value="LOCAL" />
       <updated>1591889037196</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Filling out functions and directories.">
+      <created>1591890735852</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591890735852</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 07h 46m 07s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    <history-entry file="pytest_for_test_matrix_calculations_TestGetRow - 2020.06.11 at 22h 04m 00s.xml">
+      <configuration name="pytest for test_matrix_calculations.TestGetRow" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 09m 46s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    <history-entry file="pytest_for_test_matrix_calculations_TestGetRow - 2020.06.11 at 22h 04m 38s.xml">
+      <configuration name="pytest for test_matrix_calculations.TestGetRow" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 10m 42s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    <history-entry file="pytest_for_test_matrix_calculations_TestGetRow - 2020.06.11 at 22h 06m 27s.xml">
+      <configuration name="pytest for test_matrix_calculations.TestGetRow" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 13m 07s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    <history-entry file="pytest_for_test_matrix_calculations_TestGetColumn - 2020.06.11 at 22h 07m 58s.xml">
+      <configuration name="pytest for test_matrix_calculations.TestGetColumn" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 15m 33s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    <history-entry file="pytest_for_test_matrix_calculations_TestGetColumn - 2020.06.11 at 22h 09m 40s.xml">
+      <configuration name="pytest for test_matrix_calculations.TestGetColumn" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 16m 18s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    <history-entry file="pytest_for_test_matrix_calculations_TestMakeMatrix - 2020.06.11 at 22h 17m 12s.xml">
+      <configuration name="pytest for test_matrix_calculations.TestMakeMatrix" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 16m 33s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    <history-entry file="pytest_for_test_matrix_calculations_TestMakeMatrix - 2020.06.11 at 22h 33m 35s.xml">
+      <configuration name="pytest for test_matrix_calculations.TestMakeMatrix" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 18m 05s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    <history-entry file="pytest_for_test_matrix_calculations_TestMakeMatrix - 2020.06.11 at 22h 35m 20s.xml">
+      <configuration name="pytest for test_matrix_calculations.TestMakeMatrix" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 22m 30s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    <history-entry file="pytest_for_test_matrix_calculations_TestIdentityMatrix - 2020.06.11 at 22h 36m 50s.xml">
+      <configuration name="pytest for test_matrix_calculations.TestIdentityMatrix" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_vector_calculations_TestVectorNorms - 2020.06.11 at 08h 23m 32s.xml">
-      <configuration name="pytest for test_vector_calculations.TestVectorNorms" configurationId="tests" />
+    <history-entry file="pytest_for_test_matrix_calculations_TestIdentityMatrix - 2020.06.11 at 22h 40m 00s.xml">
+      <configuration name="pytest for test_matrix_calculations.TestIdentityMatrix" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -310,18 +303,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49914238" visible="true" weight="0.24242425" />
-      <window_info id="Structure" order="1" sideWeight="0.50085765" side_tool="true" visible="true" weight="0.24242425" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49607843" visible="true" weight="0.24242425" />
+      <window_info id="Structure" order="1" sideWeight="0.50392157" side_tool="true" visible="true" weight="0.24242425" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.23289473" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23289473" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3276316" />
@@ -374,7 +368,8 @@
     <MESSAGE value="Refactored test directory to create one test function for each module directory. Added vector calculation." />
     <MESSAGE value="Added more vector calc functions. Fully using TDD now." />
     <MESSAGE value="Added more vector calc functions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more vector calc functions." />
+    <MESSAGE value="Filling out functions and directories." />
+    <option name="LAST_COMMIT_MESSAGE" value="Filling out functions and directories." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests/tests_vector_calcs.py" />
@@ -402,44 +397,8 @@
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_subtract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_matrix_calculations.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linear_algebra/vector_calculations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#151#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linear_algebra/matrix_calculations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_vector_calculations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="114" column="14" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linear_algebra/matrix_decompositions.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_subtract.py" />
+    <entry file="file://$PROJECT_DIR$/linear_algebra/matrix_factorization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
@@ -448,6 +407,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/generalized_linear_models.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_vector_calculations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="28" selection-start-line="17" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_matrix_calculations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linear_algebra/matrix_calculations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linear_algebra/vector_calculations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#150#173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
