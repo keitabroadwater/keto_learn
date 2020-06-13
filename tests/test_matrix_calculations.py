@@ -4,6 +4,9 @@ from linear_algebra.matrix_calculations import *
 
 
 A = [[1, 2, 3], [4, 5, 6]]
+
+B = [[2, 2, 2], [2, 2, 2]]
+
 i = 1
 a = 2
 b = 2
@@ -55,4 +58,53 @@ class TestIdentityMatrix(TestCase):
 
         assert x == [[1, 0], [0, 1]]
 
+
+class TestMatrixZeros(TestCase):
+    def test_zeros(self):
+
+        x = zeros(a, a)
+
+        assert x == [[0, 0], [0, 0]]
+
+
+class TestMatrixOnes(TestCase):
+    def test_ones(self):
+
+        x = ones(a, a)
+
+        assert x == [[1, 1], [1, 1]]
+
+
+class TestMatrixAdd(TestCase):
+    def test_matrix_add(self):
+
+        x = matrix_add(A, B)
+
+        assert x == [[3, 4, 5], [6, 7, 8]]
+
+
+class TestMatrixSubtract(TestCase):
+    def test_matrix_subtract(self):
+
+        x = matrix_subtract(A, B)
+
+        assert x == [[-1, 0, 1], [2, 3, 4]]
+
+
+class TestMatrixMultHadamard(TestCase):
+    def test_matrix_mult_hadamard(self):
+        x = matrix_mult_hadamard(A, B)
+
+        assert x == [[2, 4, 6], [8, 10, 12]]
+
+
+
+def vector_to_matrix():
+    pass
+
+def matrix_to_vector():
+    pass
+
+def dot_product():
+    pass
 

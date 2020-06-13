@@ -145,3 +145,16 @@ def norm(v: Vector, norm_type: float) -> float:
         return max([abs(x) for x in v])
 
 
+def zeros(num: int) -> Vector:
+    """Returns a vector of num 0s"""
+
+    return [0 for x in range(num)]
+
+
+def ones(num: int) -> Vector:
+    """Returns a vector of num 1s"""
+
+    return [1 for x in range(num)]
+
+
+

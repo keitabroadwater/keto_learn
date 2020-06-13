@@ -7,6 +7,8 @@ The basis for these calculation is the python list. So, this is only for insight
 from typing import List, Tuple, Callable
 
 Matrix = List[List[float]]
+Vector = List[float]
+
 
 
 def shape(A: Matrix) -> Tuple[int, int]:
@@ -45,3 +47,75 @@ def identity_matrix(num: int) -> Matrix:
 
     return make_matrix(num, num, lambda i, j: 1 if i == j else 0)
 
+
+def zeros(num_row: int, num_col: int) -> Matrix:
+    """Returns a matrix of numrows and numcols of zeros"""
+
+    return make_matrix(num_row, num_col, lambda i,j: 0)
+
+
+def ones(num_row: int, num_col: int) -> Matrix:
+    """Returns a matrix of numrows and numcols of ones"""
+
+    return make_matrix(num_row, num_col, lambda i,j: 1)
+
+def matrix_add(A: Matrix, B: Matrix) -> Matrix:
+    """Does elementwise addition of two same sized matrices"""
+
+    # Check that matrices are same shape
+    matrix_shape = shape(A)
+    assert matrix_shape == shape(B), "matrices are not same shape!"
+
+    # Add the matrices element wise
+    output_matrix = zeros(matrix_shape[0], matrix_shape[1])
+
+    for i in range(matrix_shape[0]):
+        for j in range(matrix_shape[1]):
+
+            output_matrix[i][j] = A[i][j] + B[i][j]
+
+    return output_matrix
+
+
+def matrix_subtract(A: Matrix, B: Matrix) -> Matrix:
+    """Does elementwise subtraction of two same sized matrices"""
+
+    # Check that matrices are same shape
+    matrix_shape = shape(A)
+    assert matrix_shape == shape(B), "matrices are not same shape!"
+
+    # Add the matrices element wise
+    output_matrix = zeros(matrix_shape[0], matrix_shape[1])
+
+    for i in range(matrix_shape[0]):
+        for j in range(matrix_shape[1]):
+            output_matrix[i][j] = A[i][j] - B[i][j]
+
+    return output_matrix
+
+
+def matrix_mult_hadamard(A: Matrix, B: Matrix) -> Matrix:
+    """Does elementwise multiplication of two same sized matrices.
+        Otherwise know as a Hadamard product"""
+
+    # Check that matrices are same shape
+    matrix_shape = shape(A)
+    assert matrix_shape == shape(B), "matrices are not same shape!"
+
+    # Add the matrices element wise
+    output_matrix = zeros(matrix_shape[0], matrix_shape[1])
+
+    for i in range(matrix_shape[0]):
+        for j in range(matrix_shape[1]):
+            output_matrix[i][j] = A[i][j] * B[i][j]
+
+    return output_matrix
+
+def vector_to_matrix():
+    pass
+
+def matrix_to_vector():
+    pass
+
+def dot_product():
+    pass

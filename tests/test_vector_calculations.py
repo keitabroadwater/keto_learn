@@ -116,3 +116,20 @@ class TestVectorNorms(TestCase):
 
         assert x == 4
 
+
+class TestVectorZeros(TestCase):
+    def test_zeros(self):
+
+        x = zeros(c)
+
+        assert x == [0, 0, 0, 0, 0]
+
+
+class TestVectorOnes(TestCase):
+    def test_ones(self):
+
+        x = ones(c)
+
+        assert x == [1, 1, 1, 1, 1]
+
+
