@@ -189,6 +189,28 @@ def dot_product(A: Matrix, B: Union[Matrix, Vector, float], dot_type: str) -> Un
 
     return output_object
 
+def transpose(A: Matrix) -> Matrix:
+    """Returns the transpose of a matrix.
+
+        This is done by making the columns of the input matrix the rows of the output matrix"""
+
+    shape_a = shape(A)
+
+    shape_output = (shape_a[1], shape_a[0])
+
+    output = zeros(shape_output[0], shape_output[1])
+
+    for i in range(shape_a[1]):
+        output[i] = get_column(A, i)
+
+    return output
+
+def square(A: Matrix) -> bool:
+    """Tests squareness of a matrix"""
+
+    shape_input = shape(A)
+
+    return shape_input[0] == shape_input[1]
 
 
 # Matrix Operations

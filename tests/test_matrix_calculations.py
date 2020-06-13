@@ -11,6 +11,8 @@ C = [[5, 6, 7]]
 
 D = [[1,2], [1,2], [1,2]]
 
+E = [[1, 2], [3, 4]]
+
 v = [5, 6, 7]
 
 i = 1
@@ -130,3 +132,30 @@ class TestMatrixDotProduct(TestCase):
         assert z == [[2, 4, 6], [8, 10, 12]]
 
 
+class TestTranspose(TestCase):
+    def test_transpose(self):
+        x = transpose(A)
+
+        assert x == [[1, 4], [2, 5], [3, 6]]
+
+
+class TestSquare(TestCase):
+    def test_square(self):
+        x = square(A)
+        y = square(E)
+
+        assert x == False
+        assert y == True
+
+class TestDeterminant(TestCase):
+    def test_determinant(self):
+        x = determinant(A)
+
+        assert x == [[1, 4], [2, 5], [3, 6]]
+
+
+class TestInverse(TestCase):
+    def test_transpose(self):
+        x = inverse(A)
+
+        assert x == [[1, 4], [2, 5], [3, 6]]
