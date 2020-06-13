@@ -5,6 +5,7 @@ The basis for these calculation is the python list. So, this is only for insight
 """
 
 from typing import List, Tuple, Callable, Union
+import copy
 
 Matrix = List[List[float]]
 Vector = List[float]
@@ -213,17 +214,62 @@ def square(A: Matrix) -> bool:
     return shape_input[0] == shape_input[1]
 
 
+def determinant(B: Matrix) -> float:
+    """Calculate the determinant of a square matrix."""
+
+
+    assert square(B), 'input must be a square matrix'
+    assert shape(B) != (1, 1), 'matrix must be larger than 1x1'
+
+    # base case
+
+    # check for squareness and 2x2ness
+    if shape(B) == (2, 2):
+
+        # do base case determinant calc
+
+        determt = B[0][0] * B[1][1] - B[0][1] * B[1][0]
+        return determt
+
+
+    # Recursive case
+    else:
+
+        # create the float multipliers from the first row
+
+        factor_floats = B[0]
+
+        # create the matrix multipliers
+        matrix_multipliers_base = B[1:]
+        matrix_multipliers = []
+        for i, x in enumerate(factor_floats):
+            copymm = copy.deepcopy(matrix_multipliers_base)
+            [y.pop(i) for y in copymm]
+            matrix_multipliers.append(copymm)
+
+        # Create the alternating +1/-1 factors
+        neg_factors = []
+        for i in range(len(factor_floats)):
+            if i % 2 == 0:
+                neg_factors.append(1)
+
+            else:
+                neg_factors.append(-1)
+
+        return sum([neg_factors[i] * determinant(matrix_multipliers[i]) * factor_floats[i]
+                    for i in range(len(factor_floats))])
+
 # Matrix Operations
 
-# 1. Transpose
+# 1. Transpose DONE
 # 2. Inverse
 # 3. Trace
-# 4. Determinant
+# 4. Determinant DONE
 # 5. Rank
 
 # Matrix type checks
 
-# 1. Square Matrix
+# 1. Square Matrix DONE
 # 2. Symmetric Matrix
 # 3. Triangular Matrix
 # 4. Diagonal Matrix

@@ -1,4 +1,5 @@
 from unittest import TestCase
+import pytest
 
 from linear_algebra.matrix_calculations import *
 
@@ -12,6 +13,11 @@ C = [[5, 6, 7]]
 D = [[1,2], [1,2], [1,2]]
 
 E = [[1, 2], [3, 4]]
+
+F = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]]
 
 v = [5, 6, 7]
 
@@ -148,10 +154,17 @@ class TestSquare(TestCase):
         assert y == True
 
 class TestDeterminant(TestCase):
-    def test_determinant(self):
-        x = determinant(A)
+    def test_determinant_square_matrix(self):
+        x = determinant(E)
+        y = determinant(F)
 
-        assert x == [[1, 4], [2, 5], [3, 6]]
+        assert x == -2
+        assert y == pytest.approx(-9.51619735392994e-16)
+
+    def test_determinant_nonsquare_matrix(self):
+
+        with pytest.raises(Exception):
+            x = determinant(A)
 
 
 class TestInverse(TestCase):
