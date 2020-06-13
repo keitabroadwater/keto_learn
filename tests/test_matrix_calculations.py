@@ -9,6 +9,8 @@ B = [[2, 2, 2], [2, 2, 2]]
 
 C = [[5, 6, 7]]
 
+D = [[1,2], [1,2], [1,2]]
+
 v = [5, 6, 7]
 
 i = 1
@@ -108,12 +110,22 @@ class TestMatrixVectortoMatrix(TestCase):
 
         assert x == [[5, 6, 7]]
 
+
 class TestMatrixMatrixtoVector(TestCase):
     def test_matrix_to_vector(self):
         x = matrix_to_vector(C)
 
         assert x == [5, 6, 7]
 
-def dot_product():
-    pass
+class TestMatrixDotProduct(TestCase):
+    def test_dot_product(self):
+        x = dot_product(A, D, 'matrix')
+
+        y = dot_product(A, v, 'vector')
+
+        z = dot_product(A, a, 'scalar')
+
+        assert x == [[6, 12], [15, 30]]
+        assert y == [38, 92]
+        assert z == [[2, 4, 6], [8, 10, 12]]
 

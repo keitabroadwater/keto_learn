@@ -4,7 +4,7 @@ Basic Matrix Calculations and Operations:
 The basis for these calculation is the python list. So, this is only for insight and education, not performance.
 """
 
-from typing import List, Tuple, Callable
+from typing import List, Tuple, Callable, Union
 
 Matrix = List[List[float]]
 Vector = List[float]
@@ -130,5 +130,64 @@ def matrix_to_vector(A: Matrix) -> Vector:
     return A[0]
 
 
-def dot_product():
-    pass
+def dot_product(A: Matrix, B: Union[Matrix, Vector, float], dot_type: str) -> Union[Matrix, Vector]:
+    """Performs dot products between a Matrix, and a matrix, vector or scalar.
+
+        Parameters: A: input Matrix
+                    B: input Matrix, Vector, or scalar
+                    C: dot_type. A string that specifies the type of dot product ("matrix", "vector", or "scalar")
+
+        For Matrix/Matrix dot product, the number of columns of A must match the number of
+        rows of B. The result is a matrix with the number of rows of A.
+
+        For Matrix/Vector dot products, the number of columns of A must match the number of elements
+        in v. The result is a Vector with the same number of items as the rows in A.
+
+        For Matrix/scalar dot products, the result is simply a matrix of the same size as A. To produce this matrix
+        elementwise multiplication is done on A with the scalar."""
+
+    input_matrix_a_shape = shape(A)
+
+    # Check input types and shapes
+    if dot_type == 'matrix':
+
+        input_matrix_b_shape = shape(B)
+
+        assert input_matrix_a_shape[1] == input_matrix_b_shape[0], "matrix A's columns must match matrix B's rows!"
+
+    elif dot_type == 'vector':
+
+        input_vector_length = len(B)
+
+        assert input_matrix_a_shape[1] == input_vector_length, "matrix A's columns must match the vector's length!"
+
+    # Perform dot products
+
+    if dot_type == 'matrix':
+        # create empty matrix
+        output_object = zeros(input_matrix_a_shape[0], input_matrix_b_shape[1])
+
+        for i in range(input_matrix_a_shape[0]):
+
+            for j in range(input_matrix_b_shape[1]):
+
+                output_object[i][j] = sum([x_i * y_i for x_i,y_i in zip(A[i], get_column(B,j))])
+
+    elif dot_type == 'vector':
+        output_object = [0]*input_matrix_a_shape[0]
+
+        for i in range(input_matrix_a_shape[0]):
+
+            output_object[i] = sum([x_i * y_i for x_i,y_i in zip(A[i], B)])
+
+    elif dot_type == 'scalar':
+
+        output_object = A.copy()
+
+        for i in range(input_matrix_a_shape[0]):
+            output_object[i] = [x_i * B for x_i in A[i]]
+
+    return output_object
+
+
+
