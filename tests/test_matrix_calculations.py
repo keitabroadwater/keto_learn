@@ -7,6 +7,10 @@ A = [[1, 2, 3], [4, 5, 6]]
 
 B = [[2, 2, 2], [2, 2, 2]]
 
+C = [[5, 6, 7]]
+
+v = [5, 6, 7]
+
 i = 1
 a = 2
 b = 2
@@ -98,12 +102,17 @@ class TestMatrixMultHadamard(TestCase):
         assert x == [[2, 4, 6], [8, 10, 12]]
 
 
+class TestMatrixVectortoMatrix(TestCase):
+    def test_vector_to_matrix(self):
+        x = vector_to_matrix(v)
 
-def vector_to_matrix():
-    pass
+        assert x == [[5, 6, 7]]
 
-def matrix_to_vector():
-    pass
+class TestMatrixMatrixtoVector(TestCase):
+    def test_matrix_to_vector(self):
+        x = matrix_to_vector(C)
+
+        assert x == [5, 6, 7]
 
 def dot_product():
     pass

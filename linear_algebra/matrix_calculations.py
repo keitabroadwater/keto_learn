@@ -111,11 +111,24 @@ def matrix_mult_hadamard(A: Matrix, B: Matrix) -> Matrix:
 
     return output_matrix
 
-def vector_to_matrix():
-    pass
 
-def matrix_to_vector():
-    pass
+def vector_to_matrix(v: Vector) -> Matrix:
+    """Inputs a vector, returns a matrix of shape 1,0 """
+
+    return [v]
+
+
+def matrix_to_vector(A: Matrix) -> Vector:
+    """Inputs a matrix of size 1, x; returns a vector"""
+
+    # check size
+
+    assert shape(A)[0] == 1, "matrix must have shape 1,0 !"
+
+    # create vector
+
+    return A[0]
+
 
 def dot_product():
     pass
