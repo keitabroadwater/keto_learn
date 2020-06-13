@@ -191,3 +191,19 @@ def dot_product(A: Matrix, B: Union[Matrix, Vector, float], dot_type: str) -> Un
 
 
 
+# Matrix Operations
+
+# 1. Transpose
+# 2. Inverse
+# 3. Trace
+# 4. Determinant
+# 5. Rank
+
+# Matrix type checks
+
+# 1. Square Matrix
+# 2. Symmetric Matrix
+# 3. Triangular Matrix
+# 4. Diagonal Matrix
+# 5. Identity Matrix
+# 6. Orthogonal Matrix
