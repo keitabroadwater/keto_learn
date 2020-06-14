@@ -8,6 +8,8 @@ A = [[1, 2, 3], [4, 5, 6]]
 
 B = [[2, 2, 2], [2, 2, 2]]
 
+
+
 C = [[5, 6, 7]]
 
 D = [[1,2], [1,2], [1,2]]
@@ -174,8 +176,19 @@ class TestAdjoint(TestCase):
         assert x == [[4, -2], [-3, 1]]
 
 
+class TestMatrixDivision(TestCase):
+    def test_matrix_division(self):
+
+        x = matrix_division(B, B, 'matrix')
+        y = matrix_division(B, -b, 'scalar')
+
+        assert x == [[1, 1, 1], [1, 1, 1]]
+        assert y == [[-1.0, -1.0, -1.0], [-1.0, -1.0, -1.0]]
+
+
+
 class TestInverse(TestCase):
     def test_inverse(self):
         x = inverse(E)
 
-        assert x == [ [-2, 3/2 ] , [1 -2/2]]
+        assert x == [ [-2, 1 ] , [3/2,  -1/2]]

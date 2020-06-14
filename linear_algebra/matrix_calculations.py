@@ -190,6 +190,48 @@ def dot_product(A: Matrix, B: Union[Matrix, Vector, float], dot_type: str) -> Un
 
     return output_object
 
+def matrix_division(A: Matrix, B: Union[Matrix, float], divisor_type: str) -> Matrix:
+    """Performs matrix element-wise division where Matrix A is the dividend,
+        and a matrix or scalar, B, is the divisor.
+
+        Divisor type is a string ('scalar', or 'matrix')"""
+
+    if divisor_type == 'scalar':
+
+        # check for zero
+
+        assert B != 0, 'divisor cannot be zero!'
+
+        B = float(B)
+
+        output = zeros(shape(A)[0], shape(A)[1])
+
+        for i in range(shape(A)[0]):
+            output[i] = [x_i / B for x_i in A[i]]
+
+        return output
+
+    elif divisor_type == 'matrix':
+
+        # check that matrices are same shape
+
+        assert shape(A) == shape(B), "matrices must be same shape!"
+
+        # check for 0 in dividend matrix
+
+        zeros_in_B = False
+        for i in range(shape(A)[0]):
+            if 0 in B[i]:
+                zeros_in_B = True
+        assert not(zeros_in_B), "divisor matrix must not have elements == 0 !"
+
+        output = zeros(shape(A)[0], shape(A)[1])
+
+        for i in range(shape(A)[0]):
+            output[i] = [x_i / y_i for x_i, y_i in zip(A[i], B[i])]
+
+        return output
+
 def transpose(A: Matrix) -> Matrix:
     """Returns the transpose of a matrix.
 
@@ -290,17 +332,18 @@ def inverse(A: Matrix) -> Matrix:
     """get the inverse of a matrix"""
 
     if determinant(A) != 0:
-        invrse = adjoint(A)/determinant(A)  # Need to create matrix division operator
+        invrse = matrix_division(adjoint(A), determinant(A), 'scalar')  # Need to create matrix division operator
         return invrse
 
     else:
         print("Inverse doesn't exist")
+        return
 
 # Matrix Operations
 
 # 1. Transpose DONE
 # 2. Adjoint DONE
-# 2. Inverse
+# 2. Inverse DONE
 # 3. Trace
 # 4. Determinant DONE
 # 5. Rank
