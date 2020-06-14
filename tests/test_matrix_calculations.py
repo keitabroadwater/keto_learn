@@ -167,8 +167,15 @@ class TestDeterminant(TestCase):
             x = determinant(A)
 
 
-class TestInverse(TestCase):
-    def test_transpose(self):
-        x = inverse(A)
+class TestAdjoint(TestCase):
+    def test_adjoint(self):
+        x = adjoint(E)
 
-        assert x == [[1, 4], [2, 5], [3, 6]]
+        assert x == [[4, -2], [-3, 1]]
+
+
+class TestInverse(TestCase):
+    def test_inverse(self):
+        x = inverse(E)
+
+        assert x == [ [-2, 3/2 ] , [1 -2/2]]

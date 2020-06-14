@@ -219,7 +219,8 @@ def determinant(B: Matrix) -> float:
 
 
     assert square(B), 'input must be a square matrix'
-    assert shape(B) != (1, 1), 'matrix must be larger than 1x1'
+    if shape(B) == (1, 1):  # determinant of 1x1 matrix is the only value
+        return B[0][0]
 
     # base case
 
@@ -259,9 +260,46 @@ def determinant(B: Matrix) -> float:
         return sum([neg_factors[i] * determinant(matrix_multipliers[i]) * factor_floats[i]
                     for i in range(len(factor_floats))])
 
+
+def adjoint(A: Matrix) -> Matrix:
+    """Inspired by https://www.geeksforgeeks.org/adjoint-inverse-matrix/"""
+
+    # Check for squareness
+    assert square(A), "matrix must be square!"
+    shape_a = shape(A)
+    assert shape_a != (1, 1), "matrix must be larger than 1x1"
+
+    # Build Adjoint Matrix
+
+    adj = zeros(shape_a[0], shape_a[1])
+
+    for i in range(shape_a[0]):
+
+        for j in range(shape_a[1]):
+            copya = copy.deepcopy(A)
+
+            copya.pop(i)
+            [y.pop(j) for y in copya]
+
+            adj[j][i] = (-1) ** (i + j) * determinant(copya)
+
+    return adj
+
+
+def inverse(A: Matrix) -> Matrix:
+    """get the inverse of a matrix"""
+
+    if determinant(A) != 0:
+        invrse = adjoint(A)/determinant(A)  # Need to create matrix division operator
+        return invrse
+
+    else:
+        print("Inverse doesn't exist")
+
 # Matrix Operations
 
 # 1. Transpose DONE
+# 2. Adjoint DONE
 # 2. Inverse
 # 3. Trace
 # 4. Determinant DONE
