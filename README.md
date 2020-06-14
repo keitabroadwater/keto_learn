@@ -6,4 +6,4 @@ Inspired by:
 
 - Grus, Data Science from Scratch
 - Trask, Grokking Deep Learning
-- Miller & Ranum, Problem Solveing with Algorithms and Data Structures using Python
+- Miller & Ranum, Problem Solving with Algorithms and Data Structures using Python
